@@ -1,0 +1,38 @@
+public class studentapp {
+int rollno;
+String name;
+String branch;
+static String collegeName;
+double precent;
+static double calculatePercCse
+ (int dp,int eng,int java)
+{
+double percent=(dp+eng+java)/300*100;
+return percent;
+}
+public static void main(String[] args){
+studentapp s1 =  new studentapp();
+s1.rollno=425;
+s1.branch="Cse";
+s1.name="vaish"
+s1.collegeName="SPEC";
+s1.percent=calculatePercCse(88,89,76);
+System.out.println(s1.rollno);
+System.out.println(s1.branch);
+System.out.println(s1.name);
+System.out.println(s1.collegeName);
+System.out.println(s1.percent);
+studentapp s2 =  new studentapp();
+s2.percent=calculatePercCse(81,86,76);
+s2.rollno=426;
+s2.branch="cse";
+s2.name="gun";
+s2.collegeName="SPEC";
+System.out.println(s2.rollno);
+System.out.println(s2.branch);
+System.out.println(s2.name);
+System.out.println(s2.collegeName);
+System.out.println(s1.percent);
+}
+}
+
